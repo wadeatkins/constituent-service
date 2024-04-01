@@ -6,6 +6,7 @@
 cd constituent-service
 docker compose up
 docker exec -it constituent-service-backend-1 /bin/bash
+npx prisma migrate dev --name init
 ```
 
 ### Create a constituents:
